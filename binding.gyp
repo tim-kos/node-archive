@@ -2,6 +2,7 @@
   "targets": [
     {
       "target_name": "archive",
+      "libraries": ["<!@(pkg-config libarchive --libs)"],
       "include_dirs": [
         "<!@(pkg-config libarchive --cflags-only-I | sed s/-I//g)"
       ],
