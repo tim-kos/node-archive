@@ -6,8 +6,8 @@
 using namespace v8;
 
 void InitAll(Handle<Object> exports) {
-  nodearchive::ArchiveReader::Init(target);
-  nodearchive::ArchiveEntryWrapper::Init(target);
+  nodearchive::ArchiveReader::Init(exports);
+  nodearchive::ArchiveEntryWrapper::Init(exports);
 }
 
 NODE_MODULE(addon, InitAll)
