@@ -2,7 +2,9 @@
 
 #include "archive_reader.h"
 
-extern "C" void init(v8::Handle<v8::Object> target) {
+void InitAll(Handle<Object> exports) {
   nodearchive::ArchiveReader::Init(target);
   nodearchive::ArchiveEntryWrapper::Init(target);
 }
+
+NODE_MODULE(addon, InitAll)
