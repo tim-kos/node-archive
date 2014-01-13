@@ -19,8 +19,10 @@
     "node": ">= 0.4.0"
   },
   "dependencies": {
+    "nan": "~0.8.0"
   },
   "devDependencies": {
-    "rimraf": "~2.0.1"
+    "rimraf": "~2.0.1",
+    "nan": "0.8.0"
   }
 }
